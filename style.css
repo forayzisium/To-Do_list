@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( to right,#e65c00,#f9d423);
+    color: white;
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    width: 100%;
+}
+
+.nav h2{
+    font-size: 2rem;
+}
+
+.user-input input{
+    width: 70%;
+    outline: none;
+     transition: 1s;
+     font-weight: bolder;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.user-input input:focus{
+    box-shadow:  0 0 5px #e65c00;
+    border: 1px solid #e65c00;
+}
+
+.user-input button{
+    cursor: pointer;
+    padding: 10.7px;
+    width: fit-content;
+    transition: 1s;
+    border: none;
+    margin-left: -4.3px;
+    background-color: lightgray;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px ;
+}
+.user-input button:hover{
+    background-color: transparent;
+    color: #141414;
+    border: 1px solid #fd00f1;
+}
+
+.to-do-item{
+    width: 500px;
+    margin: auto;
+}
+
+.list{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 2px;
+    padding: 15px;
+    color:#454545;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.list:hover{
+    box-shadow: 0 0 20px #e65c00;
+    border: 1px solid #e65c00;
+}
+
+.list i {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+
+  @media(max-width:768px){
+    .nav{
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .nav h2{
+    margin:1px 0;
+    }
+  
+    .user-input{
+        width: 70%;
+        margin-left: 120px;
+    }
+    .to-do-item{
+        width: 90%;
+    }
+  }
+  
+  @media(max-width:480px){
+    .user_input input{
+        width: 90%;
+           
+    }
+  }
+  
+  @media(max-width:320px){
+    .user_input input{width: 60%;}
+  }
